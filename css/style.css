@@ -1,6 +1,6 @@
 /********** Template CSS **********/
 :root {
-    --primary: #EAA636;
+    --primary: rgb(15, 177, 136);
     --secondary: #545454;
     --light: #FDF5EB;
     --dark: #1E1916;
@@ -56,6 +56,8 @@ h6,
 }
 
 .btn.btn-primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
     color: #FFFFFF;
 }
 
@@ -414,4 +416,8 @@ h6,
 
 .copyright a:hover {
     color: var(--light);
+}
+
+.setGreen{
+    color: --primary !important;
 }
