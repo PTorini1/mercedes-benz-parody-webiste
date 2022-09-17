@@ -1,9 +1,12 @@
 /********** Template CSS **********/
+body{
+    background-color: black;
+}
 :root {
     --primary: rgb(15, 177, 136);
     --secondary: #545454;
     --light: #FDF5EB;
-    --dark: #1E1916;
+    --dark: black;
 }
 
 h4,
@@ -191,7 +194,7 @@ h6,
     height: 100%;
     top: 0;
     left: 0;
-    background: #FFFFFF;
+    background: black;
     transform: rotate(45deg);
 }
 
@@ -206,7 +209,7 @@ h6,
 
 .header-carousel .owl-nav .owl-prev:hover,
 .header-carousel .owl-nav .owl-next:hover {
-    color: var(--dark);
+    color: var(--light);
 }
 
 .page-header {
