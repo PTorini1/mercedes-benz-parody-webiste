@@ -1,6 +1,6 @@
 .img-comp-container {
     position: relative;
-    height: 200px;
+    height: 100vh;
     /*should be the same height as the images*/
 }
 
@@ -31,6 +31,7 @@
 .align-comparation{
     margin-top: 20px;
     height: 100vh;
+    width: 100vw;
     margin-left: 0;
     padding: 0;
 }

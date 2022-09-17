@@ -424,3 +424,11 @@ h6,
 .setGreen{
     color: --primary !important;
 }
+
+footer{
+    background-color: #111111!important;
+}
+
+body {
+    overflow-x: hidden;
+}
