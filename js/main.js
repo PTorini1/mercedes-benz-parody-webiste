@@ -92,3 +92,19 @@
     
 })(jQuery);
 
+    // Menu Disapearing When Scroll Down
+    {
+        const nav = document.getElementById("menu");
+        let lastScrollY = window.scrollY;
+      
+        window.addEventListener("scroll", () => {
+          if (lastScrollY < window.scrollY) {
+            nav.classList.add("setNone");
+          } else {
+            nav.classList.remove("setNone");
+          }
+      
+          lastScrollY = window.scrollY;
+        });
+      }
+
