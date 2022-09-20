@@ -444,3 +444,22 @@ h6,
 .setNone{
     display:none;
 }
+
+.aboutIndex{
+    background-image: url(../img/mercedes-benz-vision-avtr.jpg);
+    background-size: cover;
+    height: 100vh;
+    color: white;
+    
+}
+
+.editTruck{
+    background-image: url(../img/caminha_background.jpg);
+    background-size: cover;
+    height: 80vh;
+    width: 100%;
+    color:black;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+

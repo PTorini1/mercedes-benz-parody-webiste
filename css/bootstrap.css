@@ -9984,3 +9984,9 @@ fieldset:disabled .btn {
         display: none !important;
     }
 }
+
+@media (min-width: 768px) {
+    .mercedesFuturista {
+        margin-top: 25%;
+    }
+}
