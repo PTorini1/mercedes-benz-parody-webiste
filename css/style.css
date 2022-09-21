@@ -450,7 +450,6 @@ h6,
     background-size: cover;
     height: 100vh;
     color: white;
-    
 }
 
 .editTruck{
@@ -461,5 +460,9 @@ h6,
     color:black;
     margin: 0 !important;
     padding: 0 !important;
+}
+
+.saibaMais:hover{
+    height: 20vh;
 }
 
