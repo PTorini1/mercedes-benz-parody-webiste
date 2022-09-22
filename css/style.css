@@ -2,7 +2,6 @@
 body{
     background-color: black;
     overflow-x: hidden;
-
 }
 footer{
     background-color: #111111!important;
@@ -431,18 +430,10 @@ h6,
     color: --primary !important;
 }
 
-.caixa{
-    position: relative;
-    height: 100%;
-    opacity: 0.7;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed; 
-}
-
 .setNone{
-    display:none;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
 }
 
 .aboutIndex{
@@ -450,19 +441,31 @@ h6,
     background-size: cover;
     height: 100vh;
     color: white;
+    margin: 0;
 }
 
 .editTruck{
-    background-image: url(../img/caminha_background.jpg);
+    background-image: url(../img/backgroundTruckIndex.jpg);
     background-size: cover;
-    height: 80vh;
+    height: 90vh;
     width: 100%;
     color:black;
     margin: 0 !important;
-    padding: 0 !important;
 }
 
 .saibaMais:hover{
     height: 20vh;
+}
+
+.copyright{
+    color:white; 
+    text-align: center; 
+    vertical-align: middle; 
+    margin-top: 1%;
+    background-color: black;
+}
+
+.menuPrincipal{
+    transition: all 200ms ease-out;
 }
 
