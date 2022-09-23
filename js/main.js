@@ -92,19 +92,33 @@
     
 })(jQuery);
 
-    // Menu Disapearing When Scroll Down
-    {
-        const nav = document.getElementById("menu");
-        let lastScrollY = window.scrollY;
+// Menu Disapearing When Scroll Down
+{
+    const nav = document.getElementById("menu");
+    let lastScrollY = window.scrollY;
       
-        window.addEventListener("scroll", () => {
-          if (lastScrollY < window.scrollY) {
-            nav.classList.add("setNone");
-          } else {
-            nav.classList.remove("setNone");
-          }
+    window.addEventListener("scroll", () => {
+    if (lastScrollY < window.scrollY) {
+        nav.classList.add("setNone");
+    } else {
+        nav.classList.remove("setNone");
+    }
       
-          lastScrollY = window.scrollY;
-        });
-      }
+        lastScrollY = window.scrollY;
+    });
+}
+
+// Tira som do vídeo
+var video = document.getElementById("videoGalinha");
+
+function mouseOver(){
+    video.play();
+}
+
+function onmouseOut(){
+    video.pause();
+}
+
+
+
 

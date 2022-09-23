@@ -469,3 +469,23 @@ h6,
     transition: all 200ms ease-out;
 }
 
+.videoIndex{
+    height: 100vh;
+    opacity: 0.7;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+video::-webkit-media-controls-fullscreen-button {display:none}
+video::-webkit-media-controls-play-button {display:none}
+video::-webkit-media-controls-timeline {display:none}
+video::-webkit-media-controls-current-time-display {display:none}
+video::-webkit-media-controls-time-remaining-display {display:none}
+video::-webkit-media-controls-mute-button {display:none}
+video::-webkit-media-controls-toggle-closed-captions-button {display:none}
+video::-webkit-media-controls-volume-slider {display:none}
+
+.avaliacoesIndex{
+    background-image: url(../img/avaliacoesFundo.jpg);
+}
