@@ -471,7 +471,6 @@ h6,
 
 .videoIndex{
     height: 100vh;
-    opacity: 0.7;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -488,4 +487,5 @@ video::-webkit-media-controls-volume-slider {display:none}
 
 .avaliacoesIndex{
     background-image: url(../img/avaliacoesFundo.jpg);
+    width: 100%;
 }

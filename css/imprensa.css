@@ -1,0 +1,9 @@
+body {
+    color: #adb5bd !important;
+}
+
+.page-header {
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/capa-imprensa.jpg) center center no-repeat !important;
+    background-position-y: px !important;
+}
+

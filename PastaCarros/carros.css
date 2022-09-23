@@ -1,0 +1,80 @@
+body {
+    background-color: aliceblue !important;
+}
+.page-header {
+    margin-bottom: 6rem;
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../PastaCarros/mercedes-benz-classe-c-1.jpg) center center no-repeat;
+    background-size: cover;
+}.div_carros{
+    position: relative;
+    margin-left: auto;
+    left: 100px;
+    width: 550px;
+    height: 800px;
+    display: block;
+    background-color: aliceblue;
+    color: black;
+
+}
+h4{
+   margin-left: 150px;
+
+}
+.div_carros1{
+    position: relative;
+    margin-left: auto;
+    left: 170px;
+    width: 500px;
+    height: 500px;
+    display: block;
+    background-color: aliceblue;
+    color: black;
+
+}
+.div_carros2{
+    position: relative;
+    margin-left: 30px;
+    width: 500px;
+    border: 2px;
+    border-radius: 2px;
+    height: 500px;
+    background-color: aliceblue;
+    color: black;
+
+}
+.principal{
+    display: flex;
+    justify-content: flex-end;
+}
+main{
+    max-width: 1300px;
+}
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.hidden_two{
+    opacity: 1;
+    filter: blur(5px);
+    transform: translateX(100%);
+    transition: all 1s;
+}
+/*
+.principal:hover{
+    width: 1000px;
+    transition: all 1s ease;
+}
+*/
+
+
+
+
+
