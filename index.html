@@ -40,7 +40,9 @@
     <link href="css/style.css" rel="stylesheet" />
     <link href="css/comparation.css" rel="stylesheet" />
   </head>
-
+  <script>
+        
+  </script>
   <body>
     <!-- Spinner Start -->
     <div
@@ -51,15 +53,30 @@
     </div>
     <!-- Spinner End -->
 
+  <div 
+    class="container-fluid top-bar bg-dark text-light px-0 wow fadeIn topMenu" 
+    data-wow-delay="0.1s" 
+    id="menuFixo" 
+    onmouseover="mostraMenu()" 
+    onmouseout="removeMenu()">
+      <div class="row gx-0 align-items-center d-none d-lg-flex">
+          <div class="col-lg-6 px-5 text-start">
+            <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
+                <video id="logoPrincipalVideo" onended="removeVideoInicial()" controlslist="nodownload nofullscreen" autoplay="true"
+                muted="muted">
+                  <source src="video/videoplayback.mp4" type="video/mp4">
+                </video>
+              <img id="logoPrincipalImagem" width="50" height="50" src="img/mercedes-benz-logo.png" />
+            </a>
+          </div>
+      </div>
+  </div>
+
     <!-- Navbar Start -->
     <nav
       class="navbar navbar-expand-lg navbar-dark fixed-top py-lg-0 px-lg-5 wow fadeIn"
       data-wow-delay="0.1s wow menuPrincipal"
-      id="menu"
-    >
-      <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
-        <img width="100" height="100" src="img/MB-star_n_web.svg" />
-      </a>
+      id="menu">
       <button
         type="button"
         class="navbar-toggler me-4"
@@ -532,22 +549,23 @@
               <div class="d-flex pt-2">
                 <a
                   class="btn btn-square btn-outline-light rounded-circle me-1"
-                  href="https://twitter.com/mercedesbenz"
+                  href="https://twitter.com/mercedesbenz" target="_blank"
                   ><i class="fab fa-twitter"></i
                 ></a>
                 <a
                   class="btn btn-square btn-outline-light rounded-circle me-1"
-                  href="https://pt-br.facebook.com/MercedesBenz"
+                  href="https://pt-br.facebook.com/MercedesBenz" target="_blank"
                   ><i class="fab fa-facebook-f"></i
                 ></a>
                 <a
                   class="btn btn-square btn-outline-light rounded-circle me-1"
-                  href="https://www.youtube.com/mercedesbenztv"
+                  href="https://www.youtube.com/mercedesbenztv" target="_blank"
                   ><i class="fab fa-youtube"></i
                 ></a>
                 <a
                   class="btn btn-square btn-outline-light rounded-circle me-0"
                   href="https://br.linkedin.com/company/mercedes-benz-caminh%C3%B5es"
+                  target="_blank"
                   ><i class="fab fa-linkedin-in"></i
                 ></a>
               </div>

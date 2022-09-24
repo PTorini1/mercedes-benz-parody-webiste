@@ -14,6 +14,25 @@ footer{
     --dark: black;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #000000;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(60, 189, 150);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(60, 189, 150);
+  }
+
 h4,
 h5,
 h6,
@@ -486,6 +505,19 @@ video::-webkit-media-controls-toggle-closed-captions-button {display:none}
 video::-webkit-media-controls-volume-slider {display:none}
 
 .avaliacoesIndex{
-    background-image: url(../img/avaliacoesFundo.jpg);
+    background-image: url(../img/backgroundMercedes.jpg);
     width: 100%;
+}
+
+.topMenu{
+    position: fixed;
+    z-index: 1000000;
+}
+
+.menu{
+    z-index: 999999;
+}
+
+.setDisplayNone{
+    display:none;
 }

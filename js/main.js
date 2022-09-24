@@ -20,7 +20,7 @@
     $('.fixed-top').css('top', $('.top-bar').height());
     $(window).scroll(function () {
         if ($(this).scrollTop()) {
-            $('.fixed-top').addClass('bg-dark').css('top', 0);
+            $('.fixed-top').addClass('bg-dark').css('top', 50);
         } else {
             $('.fixed-top').removeClass('bg-dark').css('top', $('.top-bar').height());
         }
@@ -94,7 +94,8 @@
 
 // Menu Disapearing When Scroll Down
 {
-    const nav = document.getElementById("menu");
+    var nav = document.getElementById("menu");
+    var menu = document.getElementById("menuFixo")
     let lastScrollY = window.scrollY;
       
     window.addEventListener("scroll", () => {
@@ -103,9 +104,16 @@
     } else {
         nav.classList.remove("setNone");
     }
-      
         lastScrollY = window.scrollY;
-    });
+    });  
+}
+
+function mostraMenu(){
+    nav.classList.remove("setNone");
+}
+
+function removeMenu(){
+    nav.classList.add("setNone");
 }
 
 // Tira som do vídeo
@@ -119,6 +127,26 @@ function onmouseOut(){
     video.pause();
 }
 
+// Carrega Vídeo Inicial (Logo)
+{
+    var logoFixo = document.getElementById("logoPrincipalImagem");
+    logoFixo.classList.add("setDisplayNone");  
+    var videoInicial = document.getElementById("logoPrincipalVideo");
+    videoInicial.play(); 
+}
 
+function removeVideoInicial(){
+    var logoFixo = document.getElementById("logoPrincipalImagem");
+    var videoInicial = document.getElementById("logoPrincipalVideo");
+    videoInicial.classList.add("setDisplayNone");
+    logoFixo.classList.remove("setDisplayNone");
 
-
+    $('.fixed-top').css('top', $('.top-bar').height());
+    $(window).scroll(function () {
+        if ($(this).scrollTop()) {
+            $('.fixed-top').addClass('bg-dark').css('top', 50);
+        } else {
+            $('.fixed-top').removeClass('bg-dark').css('top', $('.top-bar').height());
+        }
+    });
+}
