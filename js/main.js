@@ -131,8 +131,6 @@ function onmouseOut(){
 {
     var logoFixo = document.getElementById("logoPrincipalImagem");
     logoFixo.classList.add("setDisplayNone");  
-    var videoInicial = document.getElementById("logoPrincipalVideo");
-    videoInicial.play(); 
 }
 
 function removeVideoInicial(){

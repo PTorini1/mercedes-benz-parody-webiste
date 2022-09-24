@@ -1,4 +1,4 @@
-.caixa {
+.box {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,7 +15,7 @@
     transform: rotateZ(180deg);
 }
 .play {
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -28,13 +28,13 @@
     justify-content: center;
     align-items: center;
 }
-.button-play {
+.btn-play {
     border-left: 80px solid #5f5;
     border-bottom: 50px solid transparent;
     border-top: 50px solid transparent;
     cursor: pointer;
 }
-.button-pause {
+.btn-pause {
     border-right: 20px solid #5f5;
     border-left: 20px solid #5f5;
     width: 75px;
@@ -42,7 +42,7 @@
     cursor: pointer;
 }
 .element {
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
