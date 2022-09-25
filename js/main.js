@@ -146,3 +146,17 @@ function removeVideoInicial(){
         }
     });
 }
+
+function somFormula1(){
+    var som = document.getElementById("formulaAudio");
+    var videof1 = document.getElementById("videoFormula1");
+    som.play();
+    videof1.play();
+}
+
+function removeSom(){
+    var som = document.getElementById("formulaAudio");
+    var videof1 = document.getElementById("videoFormula1");
+    som.pause();
+    videof1.pause();
+}
