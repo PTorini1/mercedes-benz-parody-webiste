@@ -57,16 +57,15 @@
     class="container-fluid top-bar bg-dark text-light px-0 wow fadeIn topMenu" 
     data-wow-delay="0.1s" 
     id="menuFixo" 
-    onmouseover="mostraMenu()" 
-    onmouseout="removeMenu()">
+    onmouseover="mostraMenu()" >
       <div class="row gx-0 align-items-center d-none d-lg-flex">
           <div class="col-lg-6 px-5 text-start">
             <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
                 <!--<video id="logoPrincipalVideo" onended="removeVideoInicial()" controlslist="nodownload nofullscreen" autoplay="true"
                 muted="muted">
                   <source src="video/videoplayback.mp4" type="video/mp4">
-                </video>-->
-              <img id="logoPrincipalImagem" width="50" height="50" src="img/mercedes-benz-logo.png" />
+                </video>
+              <img id="logoPrincipalImagem" width="50" height="50" src="img/mercedes-benz-logo.png" />-->
             </a>
           </div>
       </div>
@@ -224,7 +223,7 @@
     <!-- About End -->
 
     <!-- Product Start -->
-    <div class="my-6 py-6 pt-0">
+    <div class="my-6 py-6 pt-0" style="margin-bottom: -1%;">
       <div class="editTruck">
         <div
           class="text-center mx-auto mb-5 wow fadeInUp"
@@ -294,7 +293,6 @@
                   src="img/caminhao3.jpg"
                   height="200"
                   width="100%"
-                  src="img/caminhao3.jpg"
                   alt=""
                 />
                 <div class="product-overlay">
@@ -313,11 +311,11 @@
     <!-- Product End -->
 
     <!-- Service Start -->
-    
+    <div>
     <div
           class="text-center mx-auto wow fadeInUp"
           data-wow-delay="0.1s"
-          style="max-width: 1000px; margin-bottom: -5%;margin-top: -5%">
+          style="max-width: 1000px; ">
           <h1 class="display-6 mb-4" style="color: white">
             Estabilização fora do comum
           </h1>
@@ -325,27 +323,7 @@
       <video class="videoIndex" id="videoGalinha" loop="true" onmouseover="mouseOver()" onmouseout="onmouseOut()" disablePictureinPicture controlslist="nodownload nofullscreen">
           <source src="video/Mercedes-Chicken.mp4" type="video/mp4">
       </video>
-    <!-- Service End -->
-
-    <!--<audio id="audio" src="video/forever.mp3"></audio>
-    <div class="caixa">
-        <div class="visualizer"></div>
-        <p>https://github.com/lopiacode/audio-visualizer</p>
     </div>
-    <div class="play">
-        <div class="btn button-play"></div>
-    </div>-->
-
-    <!-- Service Start -->
-    <audio src="forever.mp3"></audio>
-    <div class="box">
-        <div class="visualizer"></div>
-    </div>
-    <div class="play">
-        <div class="btn btn-play"></div>
-    </div>
-    <!-- Service End -->
-
     <!-- Testimonial Start -->
     <div class=" my-6 py-6 pb-0 avaliacoesIndex">
       <div class="">
@@ -353,7 +331,7 @@
           class="text-center mx-auto mb-5 wow fadeInUp"
           data-wow-delay="0.1s"
           style="max-width: 500px">
-          <h1 class="display-6 mb-4" style="color: white">
+          <h1 class="display-6 mb-4" style="color: white; text-shadow: 2px 2px black">
             Avaliações
           </h1>
         </div>
@@ -364,7 +342,7 @@
             <div class="d-flex align-items-center mb-4">
               <img
                 class="flex-shrink-0 rounded-circle border p-1"
-                src="img/testimonial-1.jpg"
+                src="img/pog.png"
                 alt=""/>
               <div class="ms-4">
                 <h5 class="mb-1">Marcus Poggers</h5>
@@ -379,7 +357,7 @@
             <div class="d-flex align-items-center mb-4">
               <img
                 class="flex-shrink-0 rounded-circle border p-1"
-                src="img/testimonial-2.jpg"
+                src="img/eurico.jpg"
                 alt=""/>
               <div class="ms-4">
                 <h5 class="mb-1">Luizinho, o Grande</h5>
@@ -394,7 +372,7 @@
             <div class="d-flex align-items-center mb-4">
               <img
                 class="flex-shrink-0 rounded-circle border p-1"
-                src="img/testimonial-3.jpg"
+                src="img/ratinho.jpg"
                 alt=""/>
               <div class="ms-4">
                 <h5 class="mb-1">Misaelson Bigodelson</h5>
@@ -410,7 +388,7 @@
             <div class="d-flex align-items-center mb-4">
               <img
                 class="flex-shrink-0 rounded-circle border p-1"
-                src="img/testimonial-4.jpg"
+                src="img/gaules.jpg"
                 alt=""
               />
               <div class="ms-4">
@@ -426,7 +404,7 @@
             <div class="d-flex align-items-center mb-4">
               <img
                 class="flex-shrink-0 rounded-circle border p-1"
-                src="img/testimonial-4.jpg"
+                src="img/cuboMagico.jpg"
                 alt=""
               />
               <div class="ms-4">
@@ -469,7 +447,7 @@
                 <i class="fa fa-phone-alt me-3"></i>0800 970 90 90
               </p>
               <p class="mb-2">
-                <i class="fa fa-envelope me-3"></i>mercedesbenz.suporte@mercedesbenz.com
+                <i class="fa fa-envelope me-3"></i>mercedesbenz@mercedes.com
               </p>
               <div class="d-flex pt-2">
                 <a
@@ -498,8 +476,9 @@
             <div class="col-lg-3 col-md-6">
               <h4 class="text-light mb-4">Links Rápidos</h4>
               <a class="btn btn-link" href="">Sobre</a>
-              <a class="btn btn-link" href="">Contato</a>
-              <a class="btn btn-link" href="">Imprensa</a>
+              <a class="btn btn-link" href="carros.html">Carros</a>
+              <a class="btn btn-link" href="contact.html">Contato</a>
+              <a class="btn btn-link" href="service.html">Imprensa</a>
             </div>
             <div class="col-lg-4">
               <h4 class="text-light mb-4">Newsletter</h4>

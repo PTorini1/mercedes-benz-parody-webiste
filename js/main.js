@@ -97,23 +97,20 @@
     var nav = document.getElementById("menu");
     var menu = document.getElementById("menuFixo")
     let lastScrollY = window.scrollY;
-      
+    
+    function desapareceMenu(){}
     window.addEventListener("scroll", () => {
-    if (lastScrollY < window.scrollY) {
-        nav.classList.add("setNone");
-    } else {
-        nav.classList.remove("setNone");
-    }
+        if (lastScrollY < window.scrollY) {
+            nav.classList.add("setNone");
+        } else {
+            nav.classList.remove("setNone");
+        }
         lastScrollY = window.scrollY;
     });  
 }
 
 function mostraMenu(){
     nav.classList.remove("setNone");
-}
-
-function removeMenu(){
-    nav.classList.add("setNone");
 }
 
 // Tira som do vídeo
@@ -137,6 +134,7 @@ function removeVideoInicial(){
     var logoFixo = document.getElementById("logoPrincipalImagem");
     var videoInicial = document.getElementById("logoPrincipalVideo");
     videoInicial.classList.add("setDisplayNone");
+    videoInicial.outerHTML=""
     logoFixo.classList.remove("setDisplayNone");
 
     $('.fixed-top').css('top', $('.top-bar').height());

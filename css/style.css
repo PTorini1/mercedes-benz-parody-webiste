@@ -505,8 +505,9 @@ video::-webkit-media-controls-toggle-closed-captions-button {display:none}
 video::-webkit-media-controls-volume-slider {display:none}
 
 .avaliacoesIndex{
-    background-image: url(../img/backgroundMercedes.jpg);
+    background-image: url(../img/avaliacoesFundo.jpg);
     width: 100%;
+    background-size: cover;
 }
 
 .topMenu{
