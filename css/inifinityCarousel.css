@@ -1,0 +1,92 @@
+.slider1 {
+    background: black;
+    height: 100%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    border-top: solid white 1px;
+}
+
+.slider1::before, .slider1::after {
+    background: linear-gradient(to right, rgb(15, 177, 136) 0%, rgba(255, 255, 255, 0) 100%);
+    content: "";
+    height: 100%;
+    position: absolute;
+    width: 100px;
+    z-index: 2;
+}
+
+.slider1::after {
+    right: 0;
+    top: 0;
+    -webkit-transform: rotateZ(180deg);
+    transform: rotateZ(180deg);
+}
+
+.slider1::before {
+    left: 0;
+    top: 0;
+}
+
+.slider1 .slide1-track {
+    animation: scroll 80s linear infinite;
+    display: flex;
+    width: calc(200px * 18);
+
+}
+
+.slider1 .slide1-track:hover {
+    animation-play-state: paused;
+}
+
+.slider1 .slide1 {
+    height: 100px;
+    width: 200px;
+}
+
+
+.slide1:nth-child(1), .slide1:nth-child(10) {
+    background-image: url("https://media.discordapp.net/attachments/965565632764608523/967244416161038346/DC-HBO-MAX3.jpg");
+}
+
+.slide1:nth-child(2), .slide1:nth-child(11) {
+    background-image: url("https://media.discordapp.net/attachments/965565632764608523/967242875698024448/DC-HBO-MAX2.jpg");
+}
+
+.slide1:nth-child(3), .slide1:nth-child(12) {
+    background-image: url("https://media.discordapp.net/attachments/965565632764608523/967245108900675664/LogoBatman.png");
+}
+
+.slide1:nth-child(4), .slide1:nth-child(13) {
+    background-image: url("https://media.discordapp.net/attachments/965565632764608523/967246460750008340/LogoSuperman.jpg");
+}
+
+.slide1:nth-child(5), .slide1:nth-child(14) {
+    background-image: url("https://media.discordapp.net/attachments/965565632764608523/967247337384706059/LogoFlash.png");
+}
+
+.slide1:nth-child(6), .slide1:nth-child(15) {
+    background-image: url("https://media.discordapp.net/attachments/965565632764608523/967944892166852608/LogoLanternaVerde-removebg-preview.png");
+}
+
+.slide1:nth-child(7), .slide1:nth-child(16) {
+    background-image: url("https://media.discordapp.net/attachments/965565632764608523/967248509256499220/LogoMulherMaravilha.jpg");
+}
+
+.slide1:nth-child(8), .slide1:nth-child(17) {
+    background-image: url("https://media.discordapp.net/attachments/965565632764608523/967249186070351892/LogoAquaman.jpg");
+}
+
+.slide1:nth-child(9), .slide1:nth-child(18) {
+    background-image: url("https://media.discordapp.net/attachments/965565632764608523/967945342765137970/LogoCoringa-removebg-preview.png");
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-200px * 9));
+    }
+}
