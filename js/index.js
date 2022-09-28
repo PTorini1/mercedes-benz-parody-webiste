@@ -158,8 +158,3 @@ function removeSom(){
     som.pause();
     videof1.pause();
 }
-
-function newsletter(){
-    let email = document.getElementById('email').value
-    alert(email + ' foi cadastrado com sucesso em nossa newsletter!!')
-}

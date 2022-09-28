@@ -564,3 +564,12 @@ video::-webkit-media-controls-volume-slider {display:none}
     height: 40px;
     width: 40px;
 }
+
+.newsletter{
+    background-color: rgb(15, 177, 136);
+    border-radius: 100%;
+    vertical-align: middle;
+    border: 1px solid white;
+    margin-left: 5px;
+    margin-top: 5px;
+}
