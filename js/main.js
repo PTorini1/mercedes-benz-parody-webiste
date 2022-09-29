@@ -109,4 +109,11 @@
     });  
 }
 
+function mostraMenu(){
+    nav.classList.remove("setNone");
+}
 
+function newsletter(){
+    let email = document.getElementById("email").value;
+    alert(email + " foi cadastrado com sucesso em nossa newsletter")
+}

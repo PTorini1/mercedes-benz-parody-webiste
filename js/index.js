@@ -1,7 +1,3 @@
-function mostraMenu(){
-    nav.classList.remove("setNone");
-}
-
 // Tira som do vídeo
 var video = document.getElementById("videoGalinha");
 
