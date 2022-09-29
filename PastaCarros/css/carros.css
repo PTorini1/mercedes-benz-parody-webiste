@@ -1,0 +1,465 @@
+body {
+    background-color: rgb(0, 0, 0) !important;
+}
+
+.categoria{
+    font-size: 30px;
+    display: block;
+    margin: auto;
+    color: rgb(255, 255, 255);
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    height: 20vh;
+}
+
+
+#menuzin li{
+    display: inline-block;
+    font-size: 20px;
+    padding-right: 15px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    margin: 0 auto;
+    
+}
+.escolhido{
+    color: #20c997 !important;
+    text-decoration: none !important;
+    position: relative !important;
+}
+#menuzin{
+    display: block;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    height: 200px;
+}
+
+#menuzin a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    position: relative;
+    
+}
+
+#menuzin a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+#menuzin a:hover{
+    color: #20c997;
+    transition-duration: 0.5s;
+}
+.hidden5{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(100%);
+    transition: all 1s;
+}
+.show5{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+    position: relative;
+}
+.show5{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+    
+}
+
+#menuzin a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+.page-header {
+    margin-bottom: 6rem;
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../PastaCarros/mercedes-benz-classe-c-1.jpg) center center no-repeat;
+    background-size: cover;
+}
+.principal{
+    width: 100vw;
+    height: 100vh;
+}
+.escrita{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    position: relative;
+    height: 70px;
+    width: 600px;
+    margin-left: 100px;
+    
+}
+.div_carros p{
+    color: rgb(255, 255, 255);
+    margin-left: 410px;
+    font-size: 20px;
+}
+.escrita_two{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    position: relative;
+    height: 70px;
+    width: 600px;
+    margin-left: 1130px;
+}
+.titulo_carro{
+    color: rgb(255, 255, 255);
+    margin-left: 340px;
+}
+.titulo_carro3{
+    color: rgb(255, 255, 255);
+    margin-left: 360px;
+}
+.titulo_carro2{
+    color: rgb(255, 255, 255);
+    margin-left: 900px;
+}
+.preco{
+    color: rgb(255, 255, 255);
+    margin-left: 970px;
+    font-size: 20px;
+}
+.div_carros{
+    position: relative;
+    width: 800px;
+    height: 500px;
+    display: inline-block;
+    margin-left: 1000px;
+    
+}
+.div_carros_540K{
+    position: relative;
+    width: 1300px;
+    height: 500px;
+    display: inline-block;
+    margin-left: 400px;
+    
+}
+.div_carros_540K img{
+    margin-left: 650px;
+
+}
+
+
+
+.div_carros_two{
+    position: relative;
+    width: 800px;
+    height: 500px;
+    display: inline-block;
+    margin-left: 700px;
+
+}
+.div_carros_two img{
+    margin-left: 500px;
+}
+.div_carros_three h4{
+    color: rgb(255, 255, 255);
+    margin-left: 160px;
+}
+.div_carros_three p{
+    color: rgb(255, 255, 255);
+    margin-left: 200px;
+    font-size: 20px;
+}
+.div_carros_three{
+    position: relative;
+    margin-left: 30px;
+    width: 700px;
+    height: 500px;
+
+}
+
+
+main{
+    max-width: 1300px;
+}
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.hidden2{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(100%);
+    transition: all 1s;
+    transition-delay: 0.5s;
+}
+
+.show2{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+.hidden3{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+    transition-delay: 0.6s;
+}
+.show3{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+.hidden4{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(100%);
+    transition: all 1s;
+    transition-delay: 0.6s;
+}
+.show4{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+
+.img-comp-container {
+    position: relative;
+    height: 100vh;
+    /*should be the same height as the images*/
+}
+
+.img-comp-img {
+    position: absolute;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+}
+
+.img-comp-img img {
+    display: block;
+    vertical-align: middle;
+}
+
+.img-comp-slider {
+    position: absolute;
+    z-index: 9;
+    cursor: ew-resize;
+    /*set the appearance of the slider:*/
+    width: 40px;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    opacity: 0.7;
+    border-radius: 50%;
+}
+
+.align-comparation{
+    margin-top: 20px;
+    height: 60vh;
+    width: 100vw;
+    margin-left: 600px;
+    margin-top: -380px;
+    padding: 0;
+}
+.botao-carros {
+    --glow-color: rgb(255, 255, 255);
+    --glow-color-letra: rgb(0, 0, 0);
+    --glow-spread-color: rgba(255, 255, 255, 0.1);
+    --enhanced-glow-color: rgb(255, 255, 255);
+    --btn-color: rgb(245, 236, 253);
+    border: .25em solid var(--glow-color);
+    padding: 1em 3em;
+    color: var(--glow-color-letra);
+    font-size: 15px;
+    font-weight: bold;
+    background-color: var(--btn-color);
+    border-radius: 1em;
+    outline: none;
+    position: relative;
+    box-shadow: 0 0 1em .25em var(--glow-color),
+           0 0 4em 1em var(--glow-spread-color),
+           inset 0 0 .75em .25em var(--glow-color);
+    text-shadow: 0 0 .5em var(--glow-color);
+    transition: all 0.3s;
+    margin-top: -100px;
+   }
+   audio{
+    opacity: 0;
+   }
+.botao-carros::after {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--glow-spread-color);
+    filter: blur(2em);
+    opacity: .7;
+    transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+   }
+   
+.botao-carros:hover {
+
+    color: var(--glow-color-letra);
+    background-color: var(--glow-color);
+    box-shadow: 0 0 1em .25em var(--glow-color),
+           0 0 4em 2em var(--glow-spread-color),
+           inset 0 0 .75em .25em var(--glow-color);
+   }
+   
+.botao-carros:active {
+    box-shadow: 0 0 0.6em .25em yellow,
+           0 0 2.5em 2em yellow,
+           inset 0 0 .5em .25em yellow;
+           background-color: yellow;
+           transition-duration: 0;
+   }
+   
+/* From uiverse.io by @SanketSuryawanshi */
+/*.main_div {
+    --color: #20c997;
+    position: relative;
+    z-index: 1;
+    width: 90px;
+   }
+   
+   .main_div::before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    top: -7px;
+    left: -7px;
+    z-index: -5;
+    border-top: 3px solid var(--color);
+    border-left: 3px solid var(--color);
+    transition: 0.5s;
+   }
+   
+   .main_div::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    bottom: -7px;
+    right: -7px;
+    z-index: -5;
+    border-right: 3px solid var(--color);
+    border-bottom: 3px solid var(--color);
+    transition: 0.5s;
+   }
+   
+   .main_div:hover::before {
+    width: 100%;
+    height: 100%;
+   }
+   
+   .main_div:hover::after {
+    width: 100%;
+    height: 100%;
+   }
+   
+   .main_div button {
+    padding: 0.7em 2em;
+    font-size: 16px;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+   }*\
+/*
+.content{
+    left: 100px;
+    position: absolute;
+    align-items: center;
+    background-color: #000000;
+    margin-left: 850px;
+    height: 550px;
+    width: 1800px;
+    border-radius: 20px;
+    overflow: hidden;
+    transform: translate(-50%, -50%);
+}
+
+.navegation{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+
+.bar{
+    width: 70px;
+    height: 17px;
+    bottom: 2px solid rgb(0, 0, 0);
+    margin: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.6s;
+
+}
+.bar:hover{
+    background-color: #fff;
+}
+input{
+    display: none;
+}
+
+.slides{
+    display: flex;
+    width: 500%;
+    height: 100%;
+}
+.slide{
+    width: 20%;
+}
+.slide img{
+    width: 100%;
+    height: 100%;
+}
+#slide1:checked ~ .s1{
+    margin-left: 0;
+
+}
+#slide2:checked ~ .s1{
+    margin-left: -20%;
+    
+}
+#slide3:checked ~ .s1{
+    margin-left: -40%;
+    
+}
+#slide4:checked ~ .s1{
+    margin-left: -60%;
+    
+}
+#slide5:checked ~ .s1{
+    margin-left: -80%;
+    
+}
+*/
+
+
+

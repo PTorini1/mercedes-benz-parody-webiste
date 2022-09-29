@@ -29,7 +29,7 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="PastaCarros/carros.css">
+    <link rel="stylesheet" href="PastaCarros/css/carros.css">
 
 </head>
 
@@ -41,184 +41,331 @@
     <!-- Spinner End -->
 
 
-    <!-- Topbar Start -->
-    <div class="container-fluid top-bar bg-dark text-light px-0 wow fadeIn" data-wow-delay="0.1s">
-        <div class="row gx-0 align-items-center d-none d-lg-flex">
-            <div class="col-lg-6 px-5 text-start">
-                <ol class="breadcrumb mb-0">
-                    <li class="breadcrumb-item"><a class="small text-light" href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a class="small text-light" href="#">Career</a></li>
-                    <li class="breadcrumb-item"><a class="small text-light" href="#">Terms</a></li>
-                    <li class="breadcrumb-item"><a class="small text-light" href="#">Privacy</a></li>
-                </ol>
-            </div>
-            <div class="col-lg-6 px-5 text-end">
-                <small>Follow us:</small>
-                <div class="h-100 d-inline-flex align-items-center">
-                    <a class="btn-lg-square text-primary border-end rounded-0" href=""><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn-lg-square text-primary border-end rounded-0" href=""><i class="fab fa-twitter"></i></a>
-                    <a class="btn-lg-square text-primary border-end rounded-0" href=""><i class="fab fa-linkedin-in"></i></a>
-                    <a class="btn-lg-square text-primary pe-0" href=""><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Topbar End -->
-
+    <div 
+    class="container-fluid top-bar bg-dark text-light px-0 wow fadeIn topMenu" 
+    data-wow-delay="0.1s" 
+    id="menuFixo" >
+      <div class="row gx-0 align-items-center d-none d-lg-flex">
+          <div class="col-lg-6 px-5 text-start">
+            <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
+              <img id="logoPrincipalImagem" width="50" height="50" src="img/mercedes-benz-logo.png" />
+            </a>
+          </div>
+      </div>
+  </div>
 
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
-        <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
-            <h1 class="text-primary m-0">Baker</h1>
-        </a>
-        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav mx-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link">Home</a>
-                <a href="about.html" class="nav-item nav-link">About</a>
-                <a href="service.html" class="nav-item nav-link">Services</a>
-                <a href="product.html" class="nav-item nav-link active">Products</a>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                    <div class="dropdown-menu m-0">
-                        <a href="team.html" class="dropdown-item">Our Team</a>
-                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                        <a href="404.html" class="dropdown-item">404 Page</a>
-                    </div>
-                </div>
-                <a href="contact.html" class="nav-item nav-link">Contact</a>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark fixed-top py-lg-0 px-lg-5 wow fadeIn"
+      data-wow-delay="0.1s wow menuPrincipal"
+      id="menu">
+      <button
+        type="button"
+        class="navbar-toggler me-4"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarCollapse"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav mx-auto p-4 p-lg-0">
+          <a href="index.html" class="nav-item nav-link active">Home</a>
+          <a href="service.html" class="nav-item nav-link">Imprensa</a>
+          <a href="about.html" class="nav-item nav-link">Sobre</a>
+          <div class="nav-item dropdown">
+            <a
+              href="#"
+              class="nav-link dropdown-toggle"
+              data-bs-toggle="dropdown"
+              >Carros</a
+            >
+            <div class="dropdown-menu m-0">
+              <a href="carros.html" class="dropdown-item">Todos</a>
+              <a href="caminhoes.html" class="dropdown-item">Caminhões</a>
+              <a href="eletrico.html" class="dropdown-item">Elétricos</a>
+              <a href="esportivo.html" class="dropdown-item">Esportivos</a>
+              <a href="classicos.html" class="dropdown-item">Clássicos </a>
             </div>
-            <div class=" d-none d-lg-flex">
-                <div class="flex-shrink-0 btn-lg-square border border-light rounded-circle">
-                    <i class="fa fa-phone text-primary"></i>
-                </div>
-                <div class="ps-3">
-                    <small class="text-primary mb-0">Call Us</small>
-                    <p class="text-light fs-5 mb-0">+012 345 6789</p>
-                </div>
-            </div>
+          </div>
+          <a href="contact.html" class="nav-item nav-link">Contato</a>
         </div>
+      </div>
     </nav>
     <!-- Navbar End -->
-
-    <!-- Page Header Start -->
-    <div class="container-fluid page-header py-6 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container text-center pt-5 pb-3">
-            <h1 class="display-4 text-white animated slideInDown mb-3">Products</h1>
-            <nav aria-label="breadcrumb animated slideInDown">
-                <ol class="breadcrumb justify-content-center mb-0">
-                    <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
-                    <li class="breadcrumb-item text-primary active" aria-current="page">Products</li>
-                </ol>
-            </nav>
+    <div
+    class="container-fluid p-0 pb-5 wow fadeIn"
+    data-wow-delay="0.1s "
+   >
+    <div class="owl-carousel header-carousel position-relative">
+      <div class="owl-carousel-item position-relative">
+        <img class="img-fluid" src="PastaCarros/img/carroCarousel1.jpg" alt="" />
+        <div class="owl-carousel-inner">
+          <div class="container">
+            <div class="row justify-content-start">
+              <div class="col-lg-8">
+                <p class="text-primary text-uppercase fw-bold mb-2 setGreen">
+                </p>
+                <h1 class="display-1 text-light mb-4 animated slideInDown">
+                  Veja nossos carros elétricos agora
+                </h1>
+                <p class="text-light fs-5 mb-4 pb-3">
+                  Opte pelo mais econômico e mais poggers
+                </p>
+                <a href="eletrico.html" class="btn btn-primary rounded-pill py-3 px-5"
+                  >Ver categoria</a
+                >
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="owl-carousel-item position-relative">
+       <img class="img-fluid" src="PastaCarros/img/carroCarousel2.jpg" alt="" />
+       <div class="owl-carousel-inner">
+          <div class="container">
+            <div class="row justify-content-start">
+              <div class="col-lg-8">
+                <p class="text-primary text-uppercase fw-bold mb-2">
+                </p>
+                <h1 class="display-1 text-light mb-4 animated slideInDown">
+                  Veja nossos carros esportivos agora
+                </h1>
+                <p class="text-light fs-5 mb-4 pb-3">
+                  Só lindeza só 
+                </p>
+                <a href="esportivo.html" class="btn btn-primary rounded-pill py-3 px-5"
+                  >Ver categoria</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="owl-carousel-item position-relative">
+       <img class="img-fluid" src="PastaCarros/img/carroCarousel3.jpg" alt="" />
+       <div class="owl-carousel-inner">
+          <div class="container">
+            <div class="row justify-content-start">
+              <div class="col-lg-8">
+                <p class="text-primary text-uppercase fw-bold mb-2">
+                </p>
+                <h1 class="display-1 text-light mb-4 animated slideInDown">
+                  Veja nossos carros clássicos agora
+                </h1>
+                <p class="text-light fs-5 mb-4 pb-3">
+                  007 >:(
+                </p>
+                <a href="classicos.html" class="btn btn-primary rounded-pill py-3 px-5"
+                  >Ver categoria</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="owl-carousel-item position-relative">
+        <img class="img-fluid" src="PastaCarros/img/carroCarousel4.jpg" alt="" />
+        <div class="owl-carousel-inner">
+           <div class="container">
+             <div class="row justify-content-start">
+               <div class="col-lg-8">
+                 <p class="text-primary text-uppercase fw-bold mb-2">
+                 </p>
+                 <h1 class="display-1 text-light mb-4 animated slideInDown">
+                   Veja nossos caminhões agora
+                 </h1>
+                 <p class="text-light fs-5 mb-4 pb-3">
+                   Cabe até sua mãe
+                 </p>
+                 <a href="caminhoes.html" class="btn btn-primary rounded-pill py-3 px-5"
+                   >Ver categoria</a
+                 >
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
     </div>
-    <!-- Page Header End -->
+    
+    <!-- Carousel End -->
+
+
+<br><br><br><br><br>
+<nav  id="menuzin">
+<ul>
+    <li><a href="eletrico.html">Elétrico</a></li>
+    <li><a href="caminhoes.html">Caminhões</a></li>
+    <li><a href="classicos.html">Clássicos</a></li>
+    <li><a href="exportivo.html">Exportivos</a></li>
+</ul>
+</nav>
 
 
     <!--inicio carros-->
-    <main>
-
-        <div class="div_carros hidden_two">
-            <h4>AMG GT ROADSTER</h4>
+ <main>
+    <h4 class="categoria hidden5">ELÉTRICOS</h4><br>
+    <br><br><br><br>
+    <div class="principal">
+        <div class="escrita hidden">
             <br><br>
-            <strong>Queremos garantir o uso ideal do nosso site para você e também melhorar continuamente nosso site. Também podemos mostrar conteúdo e publicidade baseados em uso e, para isso, trabalhamos com parceiros selecionados (Google Ireland Ltd., Meta Platforms Ireland Ltd., LinkedIn Ireland Unlimited Company, Amazon Web Services EMEA SARL, Akamai Technologies GmbH ). Você também recebe publicidade em outros sites por meio desses parceiros. Ao consentir, você também concorda que os dados serão transferidos para os EUA e potencialmente para outros países. Nesses países, as autoridades podem ter acesso mais fácil a esses dados e você pode ter menos direitos de se opor a esse acesso, em comparação com a União Europeia. Você pode revogar seu consentimento voluntário a qualquer momento</strong>
-            <img src="PastaCarros/carro7.jpg" width="900" height="400" alt="">
+            <p class="frase_carro">Com uma autonomia impressionante, uma ampla infraestrutura de recarga e o mais alto nível de segurança, o EQC nos proporciona uma nova e fascinante sensação ao dirigir um veículo elétrico. Descubra uma visualização e uma praticidade dos comandos completamente inédita: com comandos de voz naturais e intuitivos, funções inteligentes que se adaptam às suas necessidades e superfícies Touch sensíveis ao toque. Emoldurado com sofisticação por um posto de comando Widescreen de resolução extremamente alta</p>
+             
+             <br><br> <a href="alugar.html"><button class="botao-carros"> Alugar agora</button></a>
+            </div><br><br><br><br><br><br>
+                <div class="div_carros hidden4">
+                <h4 class="titulo_carro">CARRO ULTRA POGGERS</h4>
+                <p>R$ 1.600.000.00</p>
+                <img src="PastaCarros/img/carro-poggers.png" width="800" height="500" alt="">
+            </div>
+        </div><br><br><br><br><br><br><br><br>
+        <div class="principal">
+        <div class="escrita_two hidden2">
+        
+        
+        <p>O sedã é equipado com dois motores elétricos, instalados um em cada eixo, que somam 658 cv de potência e 96,9 kgfm de torque. A tração é sempre integral. Com esta configuração, a promessa é de que ele vá de 0 a 100 km/h em 3,8 segundos – tempo maior se comparado com os 3,3 segundos do Audi e 3,2 do Porsche.O sedã é equipado com dois motores elétricos, instalados um em cada eixo, que somam 658 cv de potência e 96,9 kgfm de torque. A tração é sempre integral. Com esta configuração, a promessa é de que ele vá de 0 a 100 km/h em 3,8 segundos – tempo maior se comparado com os 3,3 segundos do Audi e 3,2 do Porsche.  </p>
+        <br><br> <button class="botao-carros">Alugar agora</button>
+      </div><br><br><br><br>
+        <div class="div_carros_three hidden3">
+          <h4>EQC 400 4MATIC</h4>
+          <p>R$ 60.000.00</p>
+            <img src="PastaCarros/img/carrin-eletrico-umild.png" width="700" height="400" alt=""></p>
         </div>
-        <div class="div_carros2 hidden">
-            <img src="PastaCarros/Carro2.jpg" width="700" height="400" alt=""></p>
+    </div>
+    <h4 class="categoria hidden5">ESPORTIVOS</h4><br><br><br><br>
+    <div class="principal">
+      <div class="escrita hidden">
+      <p>A Mercedes-Benz começa a vender neste mês o conversível poderoso AMG GT C Roadster com preço de 7 dígitos no Brasil. Com motor V8 de 4.0 litros de 557 cavalos de potência, o modelo já pode ser encomendado por R$ 1.064.900.
+        Com torque de 69 kgfm e transmissão de dupla embreagem, o AMG GT C Roadster acelera de 0 a 100 km/h em 3,7 segundos, o que significa apenas 0,1 segundo a mais que a versão GT R Coupé, o “diabo verde”, com seus 593 cv. A velocidade máxima é de 316 km/h.
+        A versão conversível mais potente vem com esterçamento das rodas traseiras, suspensão adaptativa, bloqueio de diferencial eletrônico do eixo traseiro e sistema de exaustão variável para dar um toque a mais no som do motor V8. </p>
+        <br><br> <button class="botao-carros">Alugar agora</button>
+      </div><br><br><br><br><br><br>
+      <div class="div_carros hidden4">
+      <h4 class="titulo_carro3">AMG GT ROADSTER</h4>
+      <p>R$100.000,00</p>
+      
+            <img src="PastaCarros/img/carro7.jpg" width="900" height="400" alt=""></p>
+        </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div class="principal">
+          <div class="escrita_two hidden2">
+          <p> Quando pensamos em um automóvel Mercedes-Benz, naturalmente associamos à marca ao conforto e luxo, mas a montadora alemã conseguiu subir o próprio patamar desta vez com o lançamento do novo Mercedes Maybach S 680. 
+            O sedã é equipado com motor V12 6.0 biturbo, com 630 cv e impressionantes 102 kgfm de torque. O câmbio automático é de nove marchas e o carro possui tração integral 4Matic.  O sistema envia 69% do torque para o eixo traseiro, enquanto os outros 31% vão para o dianteiro.  </p>
+            <br><br> <button class="botao-carros">Alugar agora</button>
+          </div> <br><br><br><br><br>
+        <div class="div_carros_three hidden3">
+            <h4>MAYBACH S-CLASS</h4>
+            <p>R$100.000.00</p>
+            <img src="PastaCarros/img/Carro2.jpg" width="700" height="400" alt=""></p>
         </div>
-        <div class="div_carros1 hidden_two">
-            <img src="PastaCarros/carro6.jpg" width="700" height="360" alt=""></p>
-        </div>
-        <div class="div_carros2 hidden">
-            <img src="PastaCarros/carro8.jpg" width="850" height="360" alt=""></p>
-        </div>
-    </main>
+   </div>
+   <h4 class="categoria hidden5">CLÁSSICOS</h4><br><br><br><br>
+   <div class="principal">
+    <div class="escrita hidden">
+    <p>Apresentado no Salão Automóvel de Paris de 1936 , o carro desenhado por Friedrich Geiger foi um desenvolvimento do 500K , ele próprio um desenvolvimento do SSK . Disponível como cabriolet de dois e quatro lugares, coupé de quatro lugares ou limusine de sete lugares (com laterais blindadas e vidro blindado), foi um dos maiores carros de seu tempo</p>
+    <br><br> <button class="botao-carros">Alugar agora</button>
+  </div>
+    <div class="div_carros_540K hidden4">
+    <h4 class="titulo_carro2">MERCEDES-BENZ 540K</h4>
+    <p class="preco">R$500.000,00</p>
+          <img src="PastaCarros/img/eho540.png" width="780" height="480" alt=""></p>
+      </div>
+    </div>
+    <div class="principal">
+      <div class="escrita_two hidden2">
+      <p> A história do 300 SLR se confunde com a trajetória da Mercedes no automobilismo. O modelo foi um dos Flechas de Prata, como ficaram conhecidos os esportivos da marca alemã que dominaram diversas compe... 
+        Leia mais em: https://quatrorodas.abril.com.br/noticias/este-mercedes-benz-300-slr-pode-ter-se-tornado-carro-mais-caro-da-historia/ </p>
+       <br><br> <button class="botao-carros">Alugar agora</button>
+      </div>
+    <div class="div_carros_three hidden3">
+        <h4> 300 SLR UHLENHAUT COUPE</h4>
+        <p>R$10.000.000,00</p>
+        <img src="PastaCarros/img/carro-sus.png" width="760" height="490" alt=""></p>
+    </div>
+</div>
+
+ </main>
 
     <!-- fim carros -->
 
 
     <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-light footer my-6 mb-0 py-5 wow fadeIn" data-wow-delay="0.1s">
+
+    <footer>
+      <div
+        class="container-fluid text-light footer my-6 mb-0 py-5 wow fadeIn"
+        data-wow-delay="0.1s"
+      >
         <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4">Office Address</h4>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
-                    <div class="d-flex pt-2">
-                        <a class="btn btn-square btn-outline-light rounded-circle me-1" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-square btn-outline-light rounded-circle me-1" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-outline-light rounded-circle me-1" href=""><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-square btn-outline-light rounded-circle me-0" href=""><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4">Quick Links</h4>
-                    <a class="btn btn-link" href="">About Us</a>
-                    <a class="btn btn-link" href="">Contact Us</a>
-                    <a class="btn btn-link" href="">Our Services</a>
-                    <a class="btn btn-link" href="">Terms & Condition</a>
-                    <a class="btn btn-link" href="">Support</a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4">Quick Links</h4>
-                    <a class="btn btn-link" href="">About Us</a>
-                    <a class="btn btn-link" href="">Contact Us</a>
-                    <a class="btn btn-link" href="">Our Services</a>
-                    <a class="btn btn-link" href="">Terms & Condition</a>
-                    <a class="btn btn-link" href="">Support</a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4">Photo Gallery</h4>
-                    <div class="row g-2">
-                        <div class="col-4">
-                            <img class="img-fluid bg-light rounded p-1" src="img/product-1.jpg" alt="Image">
-                        </div>
-                        <div class="col-4">
-                            <img class="img-fluid bg-light rounded p-1" src="img/product-2.jpg" alt="Image">
-                        </div>
-                        <div class="col-4">
-                            <img class="img-fluid bg-light rounded p-1" src="img/product-3.jpg" alt="Image">
-                        </div>
-                        <div class="col-4">
-                            <img class="img-fluid bg-light rounded p-1" src="img/product-2.jpg" alt="Image">
-                        </div>
-                        <div class="col-4">
-                            <img class="img-fluid bg-light rounded p-1" src="img/product-3.jpg" alt="Image">
-                        </div>
-                        <div class="col-4">
-                            <img class="img-fluid bg-light rounded p-1" src="img/product-1.jpg" alt="Image">
-                        </div>
-                    </div>
-                </div>
+          <div class="row g-5">
+            <div class="col-lg-2">
+              <img
+                width="100"
+                height="100"
+                src="https://www.mercedes-benz.com/content/dam/brandhub/global/logos/MB-star_n_web.svg"
+              />
             </div>
-        </div>
-    </div>
-    <!-- Footer End -->
-
-
-    <!-- Copyright Start -->
-    <div class="container-fluid copyright text-light py-4 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    &copy; <a href="#">Your Site Name</a>, All Right Reserved.
-                </div>
-                <div class="col-md-6 text-center text-md-end">
-                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                    Designed By <a href="https://htmlcodex.com">HTML Codex</a>
-                    <br>Distributed By: <a class="border-bottom" href="https://themewagon.com" target="_blank">ThemeWagon</a>
-                </div>
+            <div class="col-lg-3 col-md-6">
+              <h4 class="text-light mb-4">Office Address</h4>
+              <p class="mb-2">
+                <i class="fa fa-map-marker-alt me-3"></i>Av. Mercedes-Benz, 679 <br>
+                Distrito Industrial - Campinas - SP<br>
+                CEP: 13054-750
+              </p>
+              <p class="mb-2">
+                <i class="fa fa-phone-alt me-3"></i>0800 970 90 90
+              </p>
+              <p class="mb-2">
+                <i class="fa fa-envelope me-3"></i>mercedesbenz@mercedes.com
+              </p>
+              <div class="d-flex pt-2">
+                <a
+                  class="btn btn-square btn-outline-light rounded-circle me-1"
+                  href="https://twitter.com/mercedesbenz" target="_blank"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a
+                  class="btn btn-square btn-outline-light rounded-circle me-1"
+                  href="https://pt-br.facebook.com/MercedesBenz" target="_blank"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a
+                  class="btn btn-square btn-outline-light rounded-circle me-1"
+                  href="https://www.youtube.com/mercedesbenztv" target="_blank"
+                  ><i class="fab fa-youtube"></i
+                ></a>
+                <a
+                  class="btn btn-square btn-outline-light rounded-circle me-0"
+                  href="https://br.linkedin.com/company/mercedes-benz-caminh%C3%B5es"
+                  target="_blank"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
             </div>
+            <div class="col-lg-3 col-md-4">
+              <h4 class="text-light mb-4">Links Rápidos</h4>
+              <a class="btn btn-link" href="carros.html">Carros</a>
+              <a class="btn btn-link" href="contact.html">Contato</a>
+              <a class="btn btn-link" href="service.html">Imprensa</a>
+              <a class="btn btn-link" href="about.html">Sobre</a>
+            </div>
+            <div class="col-lg-4">
+              <h4 class="text-light mb-4">Newsletter</h4>
+              <div style="display:inline-flex">
+                <input
+                  class="form-control bg-transparent border-light w-100 py-3 ps-4 pe-5"
+                  type="text"
+                  placeholder="Seu email"
+                  id="email"
+                />
+                <img onclick="newsletter()" class="newsletter" src="img/setaDireita-removebg-preview.png" id="btnBusca" alt="Buscar" height="50" width="50" />
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-    <!-- Copyright End -->
+      </div>
+    </footer>
+    <p class="mb-2 copyright">
+      Copyright © Todos os Direitos Reservados Grupo Poggers - Página desenvolvida por Marquinhos
+    </p>
 
 
     <!-- Back to Top -->
@@ -236,7 +383,7 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-    <script src="PastaCarros/carros.js"></script>
+    <script src="PastaCarros/js/carros.js"></script>
 </body>
 
 </html>

@@ -44,15 +44,29 @@
     </div>
     <!-- Spinner End -->
 
+    <div 
+    class="container-fluid top-bar bg-dark text-light px-0 wow fadeIn topMenu" 
+    data-wow-delay="0.1s" 
+    id="menuFixo" 
+    onmouseover="mostraMenu()" >
+      <div class="row gx-0 align-items-center d-none d-lg-flex">
+          <div class="col-lg-6 px-5 text-start">
+            <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
+                <video id="logoPrincipalVideo" class="videoInicial" onended="removeVideoInicial()" controlslist="nodownload nofullscreen" autoplay="true"
+                muted="muted">
+                  <source src="video/videoplayback.mp4" type="video/mp4">
+                </video>
+              <img id="logoPrincipalImagem" width="50" height="50" src="img/mercedes-benz-logo.png" />
+            </a>
+          </div>
+      </div>
+  </div>
+
     <!-- Navbar Start -->
     <nav
       class="navbar navbar-expand-lg navbar-dark fixed-top py-lg-0 px-lg-5 wow fadeIn"
       data-wow-delay="0.1s wow menuPrincipal"
-      id="menu"
-    >
-      <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
-        <img width="100" height="100" src="img/MB-star_n_web.svg" />
-      </a>
+      id="menu">
       <button
         type="button"
         class="navbar-toggler me-4"
@@ -63,24 +77,25 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="navbar-nav mx-auto p-4 p-lg-0">
-          <a href="index.html" class="nav-item nav-link">Home</a>
+          <a href="index.html" class="nav-item nav-link active">Home</a>
           <a href="service.html" class="nav-item nav-link">Imprensa</a>
-          <a href="product.html" class="nav-item nav-link">Carros</a>
           <a href="about.html" class="nav-item nav-link">Sobre</a>
           <div class="nav-item dropdown">
             <a
               href="#"
               class="nav-link dropdown-toggle"
               data-bs-toggle="dropdown"
-              >Pages</a
+              >Carros</a
             >
             <div class="dropdown-menu m-0">
-              <a href="team.html" class="dropdown-item">Our Team</a>
-              <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-              <a href="404.html" class="dropdown-item">404 Page</a>
+              <a href="carros.html" class="dropdown-item">Todos</a>
+              <a href="caminhoes.html" class="dropdown-item">Caminhões</a>
+              <a href="eletrico.html" class="dropdown-item">Elétricos</a>
+              <a href="esportivo.html" class="dropdown-item">Esportivos</a>
+              <a href="classicos.html" class="dropdown-item">Clássicos </a>
             </div>
           </div>
-          <a href="contact.html" class="nav-item nav-link active">Contato</a>
+          <a href="contact.html" class="nav-item nav-link">Contato</a>
         </div>
       </div>
     </nav>
@@ -308,71 +323,79 @@
     <!-- Contact End -->
     <!-- Footer Start -->
     <footer>
-        <div class="container-fluid text-light footer my-6 mb-0 py-5 wow fadeIn" data-wow-delay="0.1s">
-          <div class="container py-5">
-            <div class="row g-5">
-              <div class="col-lg-2">
-                <img
-                  width="100"
-                  height="100"
-                  src="https://www.mercedes-benz.com/content/dam/brandhub/global/logos/MB-star_n_web.svg"
-                />
+      <div
+        class="container-fluid text-light footer my-6 mb-0 py-5 wow fadeIn"
+        data-wow-delay="0.1s"
+      >
+        <div class="container py-5">
+          <div class="row g-5">
+            <div class="col-lg-2">
+              <img
+                width="100"
+                height="100"
+                src="https://www.mercedes-benz.com/content/dam/brandhub/global/logos/MB-star_n_web.svg"
+              />
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <h4 class="text-light mb-4">Office Address</h4>
+              <p class="mb-2">
+                <i class="fa fa-map-marker-alt me-3"></i>Av. Mercedes-Benz, 679 <br>
+                Distrito Industrial - Campinas - SP<br>
+                CEP: 13054-750
+              </p>
+              <p class="mb-2">
+                <i class="fa fa-phone-alt me-3"></i>0800 970 90 90
+              </p>
+              <p class="mb-2">
+                <i class="fa fa-envelope me-3"></i>mercedesbenz@mercedes.com
+              </p>
+              <div class="d-flex pt-2">
+                <a
+                  class="btn btn-square btn-outline-light rounded-circle me-1"
+                  href="https://twitter.com/mercedesbenz" target="_blank"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a
+                  class="btn btn-square btn-outline-light rounded-circle me-1"
+                  href="https://pt-br.facebook.com/MercedesBenz" target="_blank"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a
+                  class="btn btn-square btn-outline-light rounded-circle me-1"
+                  href="https://www.youtube.com/mercedesbenztv" target="_blank"
+                  ><i class="fab fa-youtube"></i
+                ></a>
+                <a
+                  class="btn btn-square btn-outline-light rounded-circle me-0"
+                  href="https://br.linkedin.com/company/mercedes-benz-caminh%C3%B5es"
+                  target="_blank"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
               </div>
-              <div class="col-lg-3 col-md-6">
-                <h4 class="text-light mb-4">Office Address</h4>
-                <p class="mb-2">
-                  <i class="fa fa-map-marker-alt me-3"></i>123 Street, New York,
-                  USA
-                </p>
-                <p class="mb-2">
-                  <i class="fa fa-phone-alt me-3"></i>+012 345 67890
-                </p>
-                <p class="mb-2">
-                  <i class="fa fa-envelope me-3"></i>info@example.com
-                </p>
-                <div class="d-flex pt-2">
-                  <a
-                    class="btn btn-square btn-outline-light rounded-circle me-1"
-                    href="https://twitter.com/mercedesbenz"
-                    ><i class="fab fa-twitter"></i
-                  ></a>
-                  <a
-                    class="btn btn-square btn-outline-light rounded-circle me-1"
-                    href="https://pt-br.facebook.com/MercedesBenz"
-                    ><i class="fab fa-facebook-f"></i
-                  ></a>
-                  <a
-                    class="btn btn-square btn-outline-light rounded-circle me-1"
-                    href="https://www.youtube.com/mercedesbenztv"
-                    ><i class="fab fa-youtube"></i
-                  ></a>
-                  <a
-                    class="btn btn-square btn-outline-light rounded-circle me-0"
-                    href="https://br.linkedin.com/company/mercedes-benz-caminh%C3%B5es"
-                    ><i class="fab fa-linkedin-in"></i
-                  ></a>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-6">
-                <h4 class="text-light mb-4">Quick Links</h4>
-                <a class="btn btn-link" href="">About Us</a>
-                <a class="btn btn-link" href="">Contact Us</a>
-                <a class="btn btn-link" href="">Our Services</a>
-                <a class="btn btn-link" href="">Terms & Condition</a>
-                <a class="btn btn-link" href="">Support</a>
-              </div>
-              <div class="col-lg-4">
-                <h4 class="text-light mb-4">Newsletter</h4>
+            </div>
+            <div class="col-lg-3 col-md-4">
+              <h4 class="text-light mb-4">Links Rápidos</h4>
+              <a class="btn btn-link" href="carros.html">Carros</a>
+              <a class="btn btn-link" href="contact.html">Contato</a>
+              <a class="btn btn-link" href="service.html">Imprensa</a>
+              <a class="btn btn-link" href="about.html">Sobre</a>
+            </div>
+            <div class="col-lg-4">
+              <h4 class="text-light mb-4">Newsletter</h4>
+              <div style="display:inline-flex">
                 <input
                   class="form-control bg-transparent border-light w-100 py-3 ps-4 pe-5"
                   type="text"
-                  placeholder="Your email"
+                  placeholder="Seu email"
+                  id="email"
                 />
+                <img onclick="newsletter()" class="newsletter" src="img/setaDireita-removebg-preview.png" id="btnBusca" alt="Buscar" height="50" width="50" />
               </div>
             </div>
           </div>
         </div>
-      </footer>
+      </div>
+    </footer>
       <p class="mb-2 copyright">
         Copyright © Todos os Direitos Reservados Grupo Poggers - Página desenvolvida por Luan
       </p>  
