@@ -304,14 +304,5 @@ function calculos2(){
   }
 }
 
-let modal2 = document.getElementById("container-sala2");
-    function entrarSala(){
-      modal2.style = "display:flex;"
-    }
-
-    function sairSala(){
-      modal2.style = "display:none;"
-    }
-
 
 
