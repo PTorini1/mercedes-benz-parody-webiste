@@ -245,36 +245,73 @@ Aparecer.innerHTML = '<div class="carro-poggers"><img src="PastaCarros/img/carro
 }
 function modalAparecer()
 {
-Aparecer.innerHTML = ' <div class="container-sala1" id="container-sala1"><div class="modal-sala1"> <br><br><br> <h4 id="H4modal">É NECESSÁRIO UM LOGIN PRIMEIRO!</h4> <br><br><br> <input type="text" placeholder="Ex: Marcolinha@gmail.cum"><br>  <p id="Pmodel">Digite seu e-email ou número de telefone</p> <br><br><br> <input type="text" placeholder="senha"> <p id="Pmodel">Digite sua senha.   Esqueceu a senha?</p> <br><br><br> <button id="buttonmodal">Logar</button> <button class="btn btn-danger-modal" onclick="sairSala()"> X </button>  </div></div>'
-
+  opa = document.getElementById('contentCalculadora')
+  opa.innerHTML = '<div class="container-sala1" id="container-sala1"><div class="modal-sala1"> <br><br><br><h4 id="H4modal"><input type="text" placeholder="Ex: Marcolinha@gmail.cum"><br><p id="Pmodel">Digite seu e-email ou número de telefone</p><br><br><br><input type="text" placeholder="senha"> <p id="Pmodel">Digite sua senha. Esqueceu a senha?</p><br><br><br><button id="buttonmodal">Logar</button> <button class="btn btn-danger-modal" onclick="sairSala()"> X </button> </div></div>'
 }
+
 function calculadora(){
-  var y = 1600000.00
-  var result = 0
-  var x = prompt('Quantos dias você ficará com o carro?: ')
-  var condicao = prompt('Deseja alugar à vista ou parcelado?: ')
-  if (condicao == 'a vista'){
-  y = y * x
-  var dsc = 0.10
-  result = y - (y * dsc) 
-  alert ('O  valor total será de : '+result) 
+  var nome = document.getElementById("nome").value;
+  var emailAluguel = document.getElementById("emailAluguel").value;
+  var cpf = document.getElementById("cpf").value;
+  var cep = document.getElementById("cep").value;
 
+  string = nome+" portador do CPF "+ cpf
+  aluguel.innerHTML = string
+}
 
+function calculos(){
+  aluguel = document.getElementById('aluguel');
+  pagamentoAluguel = document.getElementById('pagamentoAluguel').value;
+  dias = document.getElementById('dias').value;
+  aluguel.classList.remove('setDisplayNone');
+  let valorAluguel
+  let valorParcelado
 
-
-  }else if(condicao == 'parcelado'){
-    var acres = 0.15
-    y = y * x
-    result = y+(y * acres)
-    var vezes = prompt('Deseja parcelar quantas vezes?: ')
-    var parcelado
-    parcelado = result / vezes
-    result = result + y
-    alert ('O  valor total mais os acrescimos será de : '+result+'\n parcelado: '+vezes+'x vezes'+' com o valor de '+parcelado) 
-
-
+  if(pagamentoAluguel == 1){
+    valorAluguel = 1600*dias
+    string = "O carro que você comprou custa R$1.600 por dia. Como você escolheu "+dias+" dias. O valor final será de "+valorAluguel
+    aluguel.innerHTML = string
+  } else if (pagamentoAluguel == 2){
+    valorAluguel = 1600*dias
+    valorParcelado = valorAluguel * 1.05
+    string = "Olá o carro que você comprou custa R$1.600 por dia. Como você escolheu "+dias+" dias. O valor será de "+valorAluguel+ " mais o acréscimo de 5% por ter escolhido pagar parcelado. Totalizando: "+ valorParcelado + " reais. Podemos parcelar esse valor em até 6x sem juros."
+    aluguel.innerHTML = string
+  } else {
+    string = "Ué"
+    aluguel.innerHTML = string
   }
-  else{
-    alert('Esse valor é invalido!')
+
+}
+
+function calculos2(){
+  financimento = document.getElementById('financimento');
+  pagamentoFinancimento = document.getElementById('pagamentoFinancimento').value;
+  financimento.classList.remove('setDisplayNone');
+  let valorFinanciamento
+  let parcelaFinancimento
+
+  if(pagamentoFinancimento == 1){
+    string = "O carro que você comprou custa R$1.600.000,00. Se você possui esse valor em mãos, meus parabéns meu amigo venceu na vida ein."
+    financimento.innerHTML = string
+  } else if (pagamentoFinancimento == 2){
+    valorFinanciamento = 1600000
+    parcelaFinancimento = valorFinanciamento * 1.20
+    string = "O carro que você comprou custa R$1.600.000,00. Mas como você escolheu parcelado existe um acréscimo de 20% no valor. Assim o total será de "+ parcelaFinancimento + " reais. Podemos parcelar esse valor em até 48x."
+    financimento.innerHTML = string
+  } else {
+    string = "Ué"
+    financimento.innerHTML = string
   }
 }
+
+let modal2 = document.getElementById("container-sala2");
+    function entrarSala(){
+      modal2.style = "display:flex;"
+    }
+
+    function sairSala(){
+      modal2.style = "display:none;"
+    }
+
+
+
