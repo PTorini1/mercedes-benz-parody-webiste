@@ -59,9 +59,9 @@
 
 #buttons-container #equal-btn{
     grid-column: span 2; /*Faz o botao ocupar dois espacos no grid*/
-    background-color: #75a5cb;
+    background-color: rgb(32, 214, 169);
 }
 
 #buttons-container #equal-btn:hover{
-    background-color: #3a91d8;
+    background-color: rgb(15, 177, 136);
 }

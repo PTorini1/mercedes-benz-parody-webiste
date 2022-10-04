@@ -118,9 +118,13 @@ class Calculator {
     processEqualsOperator(){
         const operation = previousOperationText.innerText.split(" ")[1];
         this.processOperation(operation);
-
-        //const show = new Calculator(previousOperationText, currentOperationText);
-        //show.addDigit(previousOperationText.innerText.split("")[0]);
+        
+        // Mostrando resultado na parte principal da tela
+        const show = new Calculator(previousOperationText, currentOperationText);
+        show.addDigit(previousOperationText.innerText);
+        this.currentOperationText.innerText = this.currentOperationText.innerText.slice(0,-1);
+        this.previousOperationText.innerText = ""; 
+        
     }
 }
 
