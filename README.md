@@ -1,6 +1,6 @@
 # Mercedes-Benz 
 
-https://ptorini1.github.io/MercedesBenz/
+https://ptorini1.github.io/mercedes-benz-parody-webiste/
 
 This project was made during the second semester of System Development Course in Senai Manuel Garcia Filho.
 
